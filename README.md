@@ -120,7 +120,7 @@ Response includes matching terms based on the descending score of cosine similar
   ]
 }
 ```
-Please see [https://kafles.com/2024/04/29/practical-llm4/](https://kafles.com/2024/04/29/practical-llm4/) for more details.
+Please see [https://kafles.com/2024/04/28/practical-llm4/](https://kafles.com/2024/04/28/practical-llm4/) for more details.
 
 Screenshot of the demo app:
 
