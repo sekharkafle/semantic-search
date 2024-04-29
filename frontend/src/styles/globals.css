@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+body input,
+body textarea {
+  color: black;
+}
+
+a {
+  color: #2d7bd4;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+p {
+  margin: 8px 0;
+}
+
+code {
+  color: #ffa500;
+}
+
+li {
+  padding: 4px;
+}
+
+.sticky
+{
+  position: sticky;
+  padding: 10px;
+  z-index: 1;
+  bottom: 0px;
+}
+.page-header, .page-footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+.footer,
+.push {
+  height: 50px;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  align-items: center;
+  background-color: #ebebeb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width:50%;
+  margin: auto;
+  outline-style: outset;
+}
+
+.input-container:focus-within {
+  box-shadow: 0 0 0 1px rgb(1, 51, 128);
+}
+.chips {
+  list-style: none;
+  display: flex;
+}
+
+.chip {
+  background-color: #cfe1ff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.chip span {
+  color: #013380;
+  font-size: .8rem;
+}
+
+.chip svg {
+  font-size: 1.5rem;
+  fill: #3270d1;
+  cursor: pointer;
+  transition: fill 0.2s;
+}
+
+.chip svg:hover {
+  fill: #2857a3;
+  transition: all 0.2s;
+}
